@@ -24,6 +24,7 @@ header span {
     box-shadow: inset 3px 3px 10px #161616;
 }
 .message {
+    white-space: pre-line;
     min-width: 10em;
     max-width: fit-content;
     padding: 0.1em 0.1em 1em;
