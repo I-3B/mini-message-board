@@ -1,0 +1,1 @@
+mongodb+srv://i3b:p.js@cluster0.0xqwa.mongodb.net/mini-message-board?retryWrites=true&w=majority

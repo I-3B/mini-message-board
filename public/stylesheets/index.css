@@ -1,0 +1,63 @@
+header {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    background-color: #0e162171;
+    padding: 0.3em;
+}
+.messages-container {
+    margin: 1em;
+    border-radius: 10px;
+    background-color: #0e1621;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+    box-shadow: inset 3px 3px 10px #161616;
+}
+.message {
+    min-width: 10em;
+    max-width: fit-content;
+    padding: 0.1em 0.1em 1em;
+    background-color: #182533;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px #111;
+}
+.message h4 {
+    font-weight: 800;
+    font-size: 21px;
+    margin: 0 15px;
+    color: #fa9d54;
+}
+.message p {
+    word-break: break-all;
+    font-size: 20px;
+    margin: 10px 20px 20px;
+}
+.message span {
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: 15px;
+}
+#send {
+    touch-action: none;
+    background-image: url("./send.png");
+    width: 7em;
+    height: 7em;
+    border: none;
+    background-color: rgb(114, 114, 114);
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 1em;
+    transition: background-color 0.3s, filter 0.4s;
+}
+#send:hover {
+    background-color: #fa9d54;
+    filter: brightness(1.1);
+}

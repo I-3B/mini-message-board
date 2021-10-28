@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/stylesheets/reset.css")
+    link(rel='stylesheet', href='/stylesheets/new.css')
+  body
+    form(action="/new" method="POST")
+        header new message
+        label(for="name", ) name:
+        input(name="name",maxlength="30", required)#name
+        label(for="content") message:
+        textarea(name="content", cols="30", rows="10", maxlength="2000" required)#content
+        input(type="submit", value="Send")

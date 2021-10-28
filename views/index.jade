@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/stylesheets/reset.css")
+    link(rel='stylesheet', href='/stylesheets/index.css')
+  body
+    header 
+      h1 Mini Message Board
+    .messages-container 
+      each message in messages 
+        .message 
+          h4= message.name 
+          p= message.content 
+          span= message.timeStamp.toLocaleString("en-gb")
+
+    button(onclick ="move()" )#send
+  script.
+    function  move(){
+      window.location.href='/new';
+    }
+    document.querySelector(".messages-container").lastChild.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
